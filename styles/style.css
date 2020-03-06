@@ -210,3 +210,19 @@ button:hover {
   font-size: 1.6rem;
   background: dodgerblue;
 }
+
+/*Alerts*/
+
+.alert-success {
+  padding: 10px;
+  background-color: #00cc44;
+  color: white;
+  font-weight: bolder;
+}
+
+.alert-error {
+  padding: 10px;
+  background-color: #f44336;
+  color: white;
+  font-weight: bolder;
+}

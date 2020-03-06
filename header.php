@@ -15,19 +15,18 @@
     <title>Login In</title>
 </head>
 
-<body>
-    <header class="main-head">
-        <nav class="nav-header-main">
-            <h3><a class="logo" href="#">Atlas</a></h3>
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+<header class="main-head">
+    <nav class="nav-header-main">
+        <h3><a class="logo" href="#">Atlas</a></h3>
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
 
-            <div>
-                <?php
+        <div>
+            <?php
                 if(isset($_SESSION['userId'])){
                     echo' <form class="form-login" action="includes/logout.inc.php" method="POST">
                     <button type="submit" name="logout-submit">Logout</button>
@@ -42,6 +41,17 @@
                 <a href="signup.php">Signup for an account</a>';
                 }
             ?>
-            </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
+<?php if (isset($_SESSION['message'])): ?>
+<div class="alert-<?=$_SESSION['msg_type']?>">
+    <?php
+        
+        echo $_SESSION['message'];
+        unset($_SESSION['message']);
+    ?>
+</div>
+<?php endif; ?>
+
+<body>
