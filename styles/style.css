@@ -1,0 +1,212 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.6rem;
+  /*26px*/
+}
+
+li,
+button,
+label,
+input,
+p {
+  font-size: 1.5rem;
+  /*20px*/
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: dodgerblue;
+}
+
+/*The NAV section with hero*/
+
+.hero {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-head {
+  background: #131c27;
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+nav {
+  min-height: 10vh;
+  padding: 2rem;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  flex: 1 1 2rem;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+.logo {
+  flex: 1 2 2rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: 400;
+}
+/* Login Form*/
+form-login {
+  width: 400px;
+  padding: 0 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.uid-wrp,
+.pwd-wrp {
+  width: 200px;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.uid-wrp:focus,
+.pwd-wrp:focus {
+  border-color: dodgerblue;
+  box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+button {
+  width: 55px;
+  padding: 1rem 0.5rem;
+  background: dodgerblue;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #03440c;
+}
+
+/*Signup Page*/
+
+.main-wrapper {
+  min-height: 90vh;
+  background: url("../img/nature-cover.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form-head {
+  text-align: center;
+  padding: 4rem;
+}
+
+.form-wrapper {
+  background: rgba(19, 28, 39, 0.8);
+  padding: 20px 10px;
+  width: 65%;
+  color: white;
+  border-radius: 20px;
+}
+
+.signup-form {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  padding: 15px 15px;
+}
+
+/*Signup inputs*/
+
+.signup-input {
+  width: 200px;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.signup-input:focus {
+  border-color: dodgerblue;
+  box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+.reg-inp input[type="text"],
+.reg-inp input[type="password"] {
+  padding-left: 40px;
+}
+
+.reg-inp {
+  position: relative;
+  padding: 5px;
+}
+
+.reg-inp i {
+  position: absolute;
+  left: 0;
+  top: 15px;
+  padding: 10px 10px;
+  color: #aaa;
+  transition: -3s;
+}
+
+.reg-inp input[type="text"]:focus + i {
+  color: dodgerblue;
+}
+/* Register button */
+.reg-sub {
+  width: 200px;
+  padding: 10px 10px;
+  background: #03440c;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+.reg-sub:hover {
+  font-size: 1.6rem;
+  background: dodgerblue;
+}
