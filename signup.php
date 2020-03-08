@@ -14,7 +14,7 @@
             <div class="form-wrapper">
                 <form class="signup-form" action="includes/signup.inc.php" method="POST">
                     <div class="reg-inp"><input class="signup-input" type="text" name="uid" placeholder="Username:"
-                            value="">
+                            value="<?php echo isset($_POST['uid']) ? $username :'';?>">
                         <i class="fa fa-user fa-lg fa-fw"></i>
                     </div>
                     <div class="reg-inp"><input class="signup-input" type="text" name="email" placeholder="Email:"

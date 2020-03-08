@@ -16,7 +16,7 @@ if(isset($_POST['login-submit'])){
         $sql="SELECT * FROM users WHERE username=? OR email=?;";
         $stmt=mysqli_stmt_init($conn);
         if(!mysqli_stmt_prepare($stmt, $sql)){
-            $_SESSION['message'] = "SQL Error.Please contact the administrator for further assiatance!";
+            $_SESSION['message'] = "SQL Error.Please contact the administrator for further assistance!";
             $_SESSION['msg_type'] = "error";
             header("Location: ../index.php?error=sqlerror");
             exit();
